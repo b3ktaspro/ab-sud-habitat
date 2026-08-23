@@ -36,35 +36,35 @@ export default function Footer() {
             <nav className="flex flex-col gap-3 text-sm">
               <Link
                 to="/"
-                className="text-slate-600 transition hover:text-[#111A5B]"
+                className="w-fit text-slate-600 transition hover:text-[#111A5B]"
               >
                 Accueil
               </Link>
 
               <Link
                 to="/services"
-                className="text-slate-600 transition hover:text-[#111A5B]"
+                className="w-fit text-slate-600 transition hover:text-[#111A5B]"
               >
                 Services
               </Link>
 
               <Link
                 to="/projects"
-                className="text-slate-600 transition hover:text-[#111A5B]"
+                className="w-fit text-slate-600 transition hover:text-[#111A5B]"
               >
                 Réalisations
               </Link>
 
               <Link
                 to="/about"
-                className="text-slate-600 transition hover:text-[#111A5B]"
+                className="w-fit text-slate-600 transition hover:text-[#111A5B]"
               >
                 À propos
               </Link>
 
               <Link
                 to="/contact"
-                className="text-slate-600 transition hover:text-[#111A5B]"
+                className="w-fit text-slate-600 transition hover:text-[#111A5B]"
               >
                 Contact
               </Link>
@@ -77,9 +77,15 @@ export default function Footer() {
             <div className="space-y-3 text-sm text-slate-600">
               <p>Béziers • Hérault • Occitanie</p>
 
-              <p className="break-all">absudhabitat@gmail.com</p>
+              <p className="break-all">
+                <a href="mailto:absudhabitat@gmail.com">
+                  absudhabitat@gmail.com
+                </a>
+              </p>
 
-              <p>06 50 45 06 66</p>
+              <p>
+                <a href="tel:+33650450666">06 50 45 06 66</a>
+              </p>
 
               <Link
                 to="/contact"
