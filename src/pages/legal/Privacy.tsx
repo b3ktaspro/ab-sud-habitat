@@ -98,7 +98,7 @@ export default function Privacy() {
             </p>
 
             <p className="mt-2 font-medium text-[#111A5B]">
-              absudhabitat@gmail.com
+              <a href="mailto:absudhabitat@gmail.com">absudhabitat@gmail.com</a>
             </p>
           </div>
         </div>
