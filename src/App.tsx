@@ -28,12 +28,12 @@ function App() {
 
   useEffect(() => {
     const lenis = new Lenis({
-      duration: 1.2,
+      duration: 0.8,
       smoothWheel: true,
       syncTouch: false,
-      wheelMultiplier: 0.85,
+      wheelMultiplier: 0.9,
       touchMultiplier: 1,
-      lerp: 0.07,
+      lerp: 0.12,
       infinite: false,
     });
 
