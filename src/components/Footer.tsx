@@ -18,7 +18,7 @@ export default function Footer() {
                 <h2 className="font-semibold text-[#111A5B]">AB Sud Habitat</h2>
 
                 <p className="text-xs sm:text-sm text-slate-500">
-                  Plaquiste • Isolation • Aménagement
+                  Plâtrerie • Peinture • Rénovation
                 </p>
               </div>
             </div>
