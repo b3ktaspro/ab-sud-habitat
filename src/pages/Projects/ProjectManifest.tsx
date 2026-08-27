@@ -42,7 +42,7 @@ export default function ProjectManifest() {
 
           <div>
             <span className="text-3xl font-bold text-[#111A5B] sm:text-4xl">
-              34
+              Sud
             </span>
 
             <p className="mt-2 text-sm text-slate-500">Hérault & Occitanie</p>
