@@ -29,7 +29,7 @@ export default function ProjectManifest() {
               20+
             </span>
 
-            <p className="mt-2 text-sm text-slate-500">années d'expérience</p>
+            <p className="mt-2 text-sm text-slate-500">Années d'expérience</p>
           </div>
 
           <div>
@@ -37,7 +37,7 @@ export default function ProjectManifest() {
               500+
             </span>
 
-            <p className="mt-2 text-sm text-slate-500">réalisations</p>
+            <p className="mt-2 text-sm text-slate-500">Réalisations</p>
           </div>
 
           <div>
