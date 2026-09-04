@@ -2,7 +2,7 @@ export default function TrustedPartners() {
   const partners = [
     "https://rayonnance.fr/wp-content/uploads/2021/07/PointP_logo.png",
     "https://www.pagesjaunes.fr/media/newdam/preset-export-large/c4/fa/30/00/00/3f/00/04/bd/80/67c1c4fa3000003f0004bd80/67c1c4fa300000fe8e04bd81.jpg",
-    "https://www.pagesjaunes.fr/media/agc/68/f2/30/00/00/cb/07/e2/e5/ef/680b68f2300000cb07e2e5ef/680b68f2300000cb07e2e5f0.png",
+    "https://www.cromology.com/wp-content/uploads/2026/03/Tollens-logo-pagemarque.jpg",
     "https://upload.wikimedia.org/wikipedia/commons/7/7c/Isover_logo.png",
     "https://upload.wikimedia.org/wikipedia/commons/f/f5/Logo_Knauf.png",
     "https://upload.wikimedia.org/wikipedia/commons/a/a0/Placo_logo.png",
