@@ -22,6 +22,11 @@ export default function Faq() {
         "Oui. Chaque projet fait l'objet d'une étude personnalisée afin de vous fournir un devis détaillé, gratuit et sans engagement.",
     },
     {
+      question: "Je ne m'y connais pas en travaux, comment ça se passe ?",
+      answer:
+        "Ne vous inquiétez pas. Nous vous accompagnons étape par étape, de l'étude de votre projet jusqu'à la réalisation des travaux. Nous prenons le temps d'expliquer les différentes solutions, les matériaux utilisés et les étapes du chantier afin que vous avanciez sereinement, à votre rythme.",
+    },
+    {
       question: "Quels sont les délais pour démarrer un chantier ?",
       answer:
         "Les délais varient selon la période, la taille du chantier et les matériaux nécessaires. Un planning précis est établi avant le début des travaux.",
