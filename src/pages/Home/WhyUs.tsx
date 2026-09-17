@@ -18,114 +18,89 @@ export default function WhyUs() {
   ];
 
   return (
-    <section className="bg-[#F5F7FF] py-16 sm:py-24">
+    <section className="bg-[#F5F7FF] py-12 sm:py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
-
-
         <div className="max-w-3xl">
-
-          <span className="inline-flex rounded-full border border-[#D9DDEA] bg-white px-4 py-2 text-xs font-medium text-[#111A5B] sm:text-sm">
+          <span className="inline-flex rounded-full border border-[#D9DDEA] bg-white px-3 py-1.5 text-xs font-medium text-[#111A5B] sm:px-4 sm:py-2 sm:text-sm">
             Pourquoi AB Sud Habitat
           </span>
 
-
-          <h2 className="mt-5 text-3xl font-bold leading-tight text-[#111A5B] sm:text-5xl">
+          <h2 className="mt-4 text-3xl font-bold leading-tight text-[#111A5B] sm:text-4xl">
             Une expertise au service
             <br />
             de vos projets.
           </h2>
 
-
-          <p className="mt-5 max-w-2xl text-sm leading-relaxed text-slate-600 sm:text-base">
+          <p className="mt-3 max-w-2xl text-sm leading-relaxed text-slate-600 sm:text-base">
             Depuis plus de 20 ans, nous accompagnons particuliers et
             professionnels dans leurs projets de plâtrerie, isolation, faux
-            plafonds, peinture et rénovation avec la même exigence de qualité
-            et de finition.
+            plafonds, peinture et rénovation avec la même exigence de qualité et
+            de finition.
           </p>
-
         </div>
 
-
-
-        <div className="mt-12 grid gap-5 lg:grid-cols-3">
-
-
+        <div className="mt-8 grid gap-4 lg:grid-cols-3">
           {stats.map((item) => (
-
             <div
               key={item.title}
               className="
-                rounded-[32px]
+                rounded-[24px]
                 bg-white
-                p-7
-                sm:p-8
+                p-5
+
+                sm:p-6
               "
             >
-
-              <p className="text-5xl font-bold text-[#111A5B]">
+              <p className="text-4xl font-bold text-[#111A5B] sm:text-5xl">
                 {item.number}
               </p>
 
-
-              <h3 className="mt-5 text-xl font-bold text-[#111A5B]">
+              <h3 className="mt-3 text-lg font-bold text-[#111A5B]">
                 {item.title}
               </h3>
 
-
-              <p className="mt-3 text-sm leading-relaxed text-slate-600">
+              <p className="mt-2 text-sm leading-relaxed text-slate-600">
                 {item.text}
               </p>
-
             </div>
-
           ))}
-
         </div>
-
-
-
 
         <div
           className="
-            mt-6
+            mt-4
             overflow-hidden
-            rounded-[32px]
+            rounded-[24px]
             bg-[#111A5B]
-            px-6
-            py-8
+            px-5
+            py-6
 
-            sm:px-10
-            sm:py-10
+            sm:px-8
+            sm:py-8
           "
         >
-
-          <div className="grid gap-6 lg:grid-cols-[1fr_auto] lg:items-center">
-
+          <div className="grid gap-5 lg:grid-cols-[1fr_auto] lg:items-center">
             <div>
-
-              <h3 className="text-2xl font-bold text-white sm:text-3xl">
-                Un accompagnement complet,
-                de l'étude aux finitions.
+              <h3 className="text-xl font-bold text-white sm:text-2xl">
+                Un accompagnement complet, de l'étude aux finitions.
               </h3>
 
-
-              <p className="mt-3 max-w-2xl text-sm leading-relaxed text-white/70 sm:text-base">
+              <p className="mt-2 max-w-2xl text-sm leading-relaxed text-white/70">
                 Nous vous accompagnons dans chaque étape du projet afin de
                 proposer des solutions adaptées, durables et cohérentes avec
                 votre intérieur.
               </p>
 
-
               <a
                 href="/contact"
                 className="
-                  mt-6
+                  mt-4
                   inline-flex
                   items-center
                   rounded-xl
                   bg-white
-                  px-6
-                  py-3
+                  px-5
+                  py-2.5
                   text-sm
                   font-semibold
                   text-[#111A5B]
@@ -135,27 +110,19 @@ export default function WhyUs() {
               >
                 Contactez-nous
               </a>
-
             </div>
 
-
             <div className="text-left lg:text-right">
-
-              <p className="text-sm uppercase tracking-[0.2em] text-white/50">
+              <p className="text-xs uppercase tracking-[0.2em] text-white/50">
                 AB Sud Habitat
               </p>
 
-              <p className="mt-2 text-xl font-bold text-white">
+              <p className="mt-1 text-lg font-bold text-white">
                 Qualité & précision
               </p>
-
             </div>
-
           </div>
-
         </div>
-
-
       </div>
     </section>
   );
