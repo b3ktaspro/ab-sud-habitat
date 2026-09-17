@@ -9,107 +9,88 @@ export default function ServiceShowcase() {
     {
       title: "Confort & Performance",
       description:
-        "Des solutions pensées pour renforcer le bien-être au quotidien grâce à une meilleure maîtrise du confort thermique, acoustique et énergétique.",
+        "Des solutions pensées pour améliorer le confort quotidien grâce à une meilleure isolation thermique, acoustique et une rénovation adaptée aux besoins du bâtiment.",
       image: "/images/select/special/special3.jpg",
     },
     {
       title: "Faux plafonds modernes",
       description:
-        "Création de faux plafonds contemporains avec intégration de spots, éclairages indirects et finitions soignées pour apporter élégance, confort et caractère à chaque espace.",
+        "Création de plafonds contemporains avec des finitions soignées, jeux de volumes et intégrations adaptées pour apporter élégance et caractère aux espaces.",
       image: "/images/logo/branding_plafond.png",
     },
   ];
 
   return (
-    <section className="bg-white py-14 sm:py-18">
+    <section className="bg-[#F5F7FF] py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
-        <div className="mb-10 sm:mb-12">
-          <span className="inline-flex rounded-full border border-[#D9DDEA] bg-[#F5F7FF] px-4 py-2 text-xs font-medium text-[#111A5B] sm:text-sm">
-            Savoir-faire & Réalisations
+        <div className="max-w-3xl">
+          <span className="text-xs uppercase tracking-[0.25em] text-slate-400">
+            Savoir-faire & réalisations
           </span>
 
-          <h2 className="mt-4 max-w-4xl text-3xl font-bold text-[#111A5B] sm:text-4xl">
-            Des espaces pensés pour le confort, l'esthétique et la durabilité.
+          <h2 className="mt-5 text-4xl font-bold leading-tight text-[#111A5B] sm:text-5xl">
+            Des espaces conçus
+            <br />
+            autour de vos besoins.
           </h2>
 
-          <p className="mt-4 max-w-3xl text-sm leading-relaxed text-slate-600 sm:text-base">
-            Nous accompagnons particuliers et professionnels dans la création,
-            la rénovation et la valorisation de leurs espaces grâce à des
-            solutions durables, des finitions soignées et une approche
-            entièrement sur mesure.
+          <p className="mt-5 max-w-2xl text-sm leading-relaxed text-slate-600 sm:text-base">
+            Nous imaginons et réalisons des aménagements intérieurs sur mesure
+            en associant fonctionnalité, confort et qualité des finitions.
           </p>
         </div>
 
-        <div className="space-y-5">
+        <div className="mt-16 space-y-20 sm:mt-24">
           {services.map((service, index) => (
             <div
               key={service.title}
-              className={`
-                overflow-hidden
-                rounded-[24px]
-                border
-                border-slate-100
-
-                lg:grid
-
-                ${
-                  index % 2 === 0
-                    ? "lg:grid-cols-[1.2fr_0.8fr]"
-                    : "lg:grid-cols-[0.8fr_1.2fr]"
-                }
-              `}
+              className="
+                grid
+                gap-8
+                lg:grid-cols-12
+                lg:items-center
+              "
             >
-              {index % 2 === 0 ? (
-                <>
-                  <div className="flex flex-col justify-center p-5 sm:p-8 md:p-10">
-                    <h3 className="text-xl font-bold text-[#111A5B] sm:text-2xl">
-                      {service.title}
-                    </h3>
+              <div
+                className={`
+                  lg:col-span-7
+                  ${index % 2 === 1 ? "lg:order-2" : ""}
+                `}
+              >
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  className="
+                    h-[300px]
+                    w-full
+                    rounded-[32px]
+                    object-cover
 
-                    <p className="mt-3 sm:mt-4 text-sm sm:text-base leading-relaxed text-slate-600">
-                      {service.description}
-                    </p>
-                  </div>
+                    sm:h-[430px]
+                  "
+                />
+              </div>
 
-                  <img
-                    src={service.image}
-                    alt={service.title}
-                    className="
-                      h-[220px]
-                      w-full
-                      object-cover
+              <div
+                className={`
+                  lg:col-span-5
+                  ${index % 2 === 1 ? "lg:order-1" : ""}
+                `}
+              >
+                <p className="text-sm font-medium text-slate-400">
+                  0{index + 1}
+                </p>
 
-                      sm:h-[280px]
-                      lg:h-[320px]
-                    "
-                  />
-                </>
-              ) : (
-                <>
-                  <img
-                    src={service.image}
-                    alt={service.title}
-                    className="
-                      h-[220px]
-                      w-full
-                      object-cover
+                <h3 className="mt-4 text-3xl font-bold leading-tight text-[#111A5B] sm:text-4xl">
+                  {service.title}
+                </h3>
 
-                      sm:h-[280px]
-                      lg:h-[320px]
-                    "
-                  />
+                <p className="mt-5 text-sm leading-relaxed text-slate-600 sm:text-base">
+                  {service.description}
+                </p>
 
-                  <div className="flex flex-col justify-center p-5 sm:p-8 md:p-10">
-                    <h3 className="text-xl font-bold text-[#111A5B] sm:text-2xl">
-                      {service.title}
-                    </h3>
-
-                    <p className="mt-3 sm:mt-4 text-sm sm:text-base leading-relaxed text-slate-600">
-                      {service.description}
-                    </p>
-                  </div>
-                </>
-              )}
+                <div className="mt-8 h-px w-full bg-slate-200" />
+              </div>
             </div>
           ))}
         </div>
