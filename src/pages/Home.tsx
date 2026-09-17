@@ -12,14 +12,9 @@ export default function Home() {
     <>
       <Hero />
       <TrustedPartners />
-
-      
-
       <PortfolioCategories />
       <Services />
-      
       <HiddenProblems />
-      
       <Faq />
       <PlacoTypes />
       <WhyUs />
