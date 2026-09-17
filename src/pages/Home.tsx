@@ -4,16 +4,25 @@ import Faq from "./Home/Faq";
 import WhyUs from "./Home/WhyUs";
 import TrustedPartners from "./Home/TrustedPartners";
 import PortfolioCategories from "./Home/PortfolioCategories";
+import HiddenProblems from "./Home/HiddenProblems";
+import PlacoTypes from "./Home/PlacoTypes";
 
 export default function Home() {
   return (
     <>
       <Hero />
       <TrustedPartners />
-      <Services />
+
+      
+
       <PortfolioCategories />
-      <WhyUs />
+      <Services />
+      
+      <HiddenProblems />
+      
       <Faq />
+      <PlacoTypes />
+      <WhyUs />
     </>
   );
 }
