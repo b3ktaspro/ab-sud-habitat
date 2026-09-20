@@ -17,7 +17,7 @@ type ProjectGalleryProps = {
 
 export default function ProjectGallery({ slides }: ProjectGalleryProps) {
   return (
-    <section className="mt-10 sm:mt-16">
+    <section className="mt-10 sm.mt-16">
       <div className="relative">
         <button
           className="
@@ -69,6 +69,7 @@ export default function ProjectGallery({ slides }: ProjectGalleryProps) {
             delay: 5000,
             disableOnInteraction: false,
           }}
+          watchSlidesProgress
           loop
           spaceBetween={20}
           slidesPerView={1}
@@ -80,17 +81,19 @@ export default function ProjectGallery({ slides }: ProjectGalleryProps) {
                 <img
                   src={slide.image}
                   alt={slide.title}
+                  loading={index === 0 ? "eager" : "lazy"}
+                  decoding="async"
                   className="
-                  h-[450px]
-                  w-full
-                  object-cover
-                
-                  sm:h-[500px]
-                
-                  lg:h-[550px]
-                
-                  xl:h-[650px]
-                "
+                    h-[450px]
+                    w-full
+                    object-cover
+
+                    sm:h-[500px]
+
+                    lg:h-[550px]
+
+                    xl:h-[650px]
+                  "
                 />
 
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
