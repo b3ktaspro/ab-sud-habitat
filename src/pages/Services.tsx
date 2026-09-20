@@ -1,13 +1,13 @@
+import HiddenProblems from "./Services/HiddenProblems";
+import PlacoTypes from "./Services/PlacoTypes";
 import ProcessSection from "./Services/ProcessSection";
-import ServicesHero from "./Services/ServicesHero";
-import ServiceShowcase from "./Services/ServiceShowcase";
 
 export default function Services() {
   return (
     <>
-      <ServicesHero />
-      <ServiceShowcase />
+      <PlacoTypes />
       <ProcessSection />
+      <HiddenProblems />
     </>
   );
 }
