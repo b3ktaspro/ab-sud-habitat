@@ -1,19 +1,16 @@
-import { useEffect } from "react";
 import { motion } from "framer-motion";
+import { useLocation } from "react-router-dom";
 
 type PageTransitionProps = {
   children: React.ReactNode;
 };
 
 export default function PageTransition({ children }: PageTransitionProps) {
-  useEffect(() => {
-    requestAnimationFrame(() => {
-      window.scrollTo(0, 0);
-    });
-  }, []);
+  const location = useLocation();
 
   return (
     <motion.div
+      key={location.pathname}
       initial={{
         opacity: 0,
         y: 20,
@@ -21,10 +18,6 @@ export default function PageTransition({ children }: PageTransitionProps) {
       animate={{
         opacity: 1,
         y: 0,
-      }}
-      exit={{
-        opacity: 0,
-        y: -20,
       }}
       transition={{
         duration: 0.45,

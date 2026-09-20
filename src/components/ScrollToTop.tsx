@@ -1,17 +1,25 @@
 import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
-import { lenisInstance } from "../App";
+import { useLocation, useNavigationType } from "react-router-dom";
+import { lenisInstance } from "./SmoothScroll";
 
 export default function ScrollToTop() {
   const { pathname } = useLocation();
+  const navigationType = useNavigationType();
 
   useEffect(() => {
-    if (lenisInstance) {
-      lenisInstance.scrollTo(0, {
-        immediate: true,
+    // seulement quand on clique sur un nouveau lien
+    if (navigationType === "PUSH") {
+      requestAnimationFrame(() => {
+        if (lenisInstance) {
+          lenisInstance.scrollTo(0, {
+            immediate: true,
+          });
+        } else {
+          window.scrollTo(0, 0);
+        }
       });
     }
-  }, [pathname]);
+  }, [pathname, navigationType]);
 
   return null;
 }
