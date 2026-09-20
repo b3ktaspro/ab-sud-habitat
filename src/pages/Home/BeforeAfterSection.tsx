@@ -288,7 +288,7 @@ export default function BeforeAfterSection() {
         </div>
 
         <div
-  className="
+          className="
     hidden
     mt-6
     md:grid
@@ -296,7 +296,7 @@ export default function BeforeAfterSection() {
     md:gap-4
     md:items-start
   "
->
+        >
           <div className="space-y-4">
             {projects
               .filter((_, index) => index % 2 === 0)

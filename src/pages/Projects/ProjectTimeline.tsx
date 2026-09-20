@@ -23,7 +23,6 @@ export default function ProjectTimeline() {
   return (
     <section className="bg-white py-16 sm:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
-
         <div className="mb-12">
           <span className="inline-flex rounded-full border border-slate-200 px-4 py-2 text-xs font-medium text-[#111A5B] sm:text-sm">
             Réalisations
@@ -34,34 +33,24 @@ export default function ProjectTimeline() {
           </h2>
         </div>
 
-
         <div className="space-y-16">
-
           {projects.map((project) => (
-
             <div key={project.title}>
-
               <div className="grid items-stretch gap-10 lg:grid-cols-2">
-
-
                 {/* GAUCHE */}
 
                 <div className="flex flex-col">
-
                   <p className="text-[11px] font-medium uppercase tracking-[0.2em] text-slate-400">
                     {project.city}
                   </p>
-
 
                   <h3 className="mt-3 text-2xl font-bold text-[#111A5B] sm:text-3xl">
                     {project.title}
                   </h3>
 
-
                   <p className="mt-4 text-sm leading-relaxed text-slate-600 sm:text-base">
                     {project.description}
                   </p>
-
 
                   <div
                     className="
@@ -72,114 +61,79 @@ export default function ProjectTimeline() {
                       p-6
                     "
                   >
-
                     <h4 className="mb-5 text-lg font-semibold text-[#111A5B]">
                       Fiche chantier
                     </h4>
 
-
                     <div className="grid gap-5 sm:grid-cols-2">
-
                       <div>
-                        <p className="text-sm text-slate-500">
-                          Durée
-                        </p>
+                        <p className="text-sm text-slate-500">Durée</p>
 
                         <p className="mt-1 font-semibold text-[#111A5B]">
                           {project.duration}
                         </p>
                       </div>
 
-
                       <div>
-                        <p className="text-sm text-slate-500">
-                          Surface
-                        </p>
+                        <p className="text-sm text-slate-500">Surface</p>
 
                         <p className="mt-1 font-semibold text-[#111A5B]">
                           {project.surface}
                         </p>
                       </div>
 
-
                       <div>
-                        <p className="text-sm text-slate-500">
-                          Type
-                        </p>
+                        <p className="text-sm text-slate-500">Type</p>
 
                         <p className="mt-1 font-semibold text-[#111A5B]">
                           {project.type}
                         </p>
                       </div>
 
-
                       <div>
-                        <p className="text-sm text-slate-500">
-                          Prestations
-                        </p>
+                        <p className="text-sm text-slate-500">Prestations</p>
 
                         <p className="mt-1 font-semibold text-[#111A5B]">
                           {project.service}
                         </p>
                       </div>
-
                     </div>
 
-
                     <div className="mt-6 border-t border-slate-300 pt-6">
-
                       <p className="mb-4 text-sm text-slate-500">
                         Résultats obtenus
                       </p>
 
-
                       <div className="grid gap-2">
-
                         {project.results.map((result) => (
-
                           <div
                             key={result}
                             className="text-sm font-medium text-[#111A5B]"
                           >
                             ✓ {result}
                           </div>
-
                         ))}
-
                       </div>
-
                     </div>
-
                   </div>
-
                 </div>
-
-
 
                 {/* DROITE */}
 
                 <div className="flex flex-col">
-
                   <span className="inline-flex w-fit rounded-full bg-[#ECECF1] px-4 py-2 text-xs font-medium text-[#111A5B]">
                     Transformation du chantier
                   </span>
 
-
                   <div className="mt-5 grid gap-4 md:grid-cols-2">
-
-
                     <div>
-
                       <div className="mb-3 flex items-center gap-2">
-
                         <span className="h-2 w-2 rounded-full bg-slate-400" />
 
                         <p className="text-sm font-medium text-slate-500">
                           Avant travaux
                         </p>
-
                       </div>
-
 
                       <img
                         src={project.before}
@@ -193,23 +147,16 @@ export default function ProjectTimeline() {
                           object-cover
                         "
                       />
-
                     </div>
 
-
-
                     <div>
-
                       <div className="mb-3 flex items-center gap-2">
-
                         <span className="h-2 w-2 rounded-full bg-[#111A5B]" />
 
                         <p className="text-sm font-medium text-[#111A5B]">
                           Après réalisation
                         </p>
-
                       </div>
-
 
                       <img
                         src={project.after}
@@ -223,13 +170,8 @@ export default function ProjectTimeline() {
                           object-cover
                         "
                       />
-
                     </div>
-
-
                   </div>
-
-
 
                   <div
                     className="
@@ -240,31 +182,21 @@ export default function ProjectTimeline() {
                       p-6
                     "
                   >
-
                     <h4 className="font-semibold text-[#111A5B]">
                       Résultat final
                     </h4>
-
 
                     <p className="mt-3 text-sm leading-relaxed text-slate-600">
                       Ce chantier a permis d'améliorer le confort, l'esthétique
                       et les performances globales du bâtiment grâce à une mise
                       en œuvre soignée et des finitions professionnelles.
                     </p>
-
                   </div>
-
                 </div>
-
-
               </div>
-
             </div>
-
           ))}
-
         </div>
-
       </div>
     </section>
   );

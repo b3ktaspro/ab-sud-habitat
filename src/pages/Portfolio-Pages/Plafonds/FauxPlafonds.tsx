@@ -27,7 +27,8 @@ export default function FauxPlafonds() {
                 "Création d'un plafond suspendu moderne avec une finition propre et durable.",
             },
             {
-              image: "/images/images-des-chantiers/plafond/faux-plafond-06.jpeg",
+              image:
+                "/images/images-des-chantiers/plafond/faux-plafond-06.jpeg",
               title: "Faux plafonds sur mesure",
               description:
                 "Conception et réalisation de faux plafonds adaptés aux contraintes et aux besoins de chaque projet.",

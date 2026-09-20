@@ -21,8 +21,7 @@ export default function HiddenProblems() {
         "Certains logements présentent une isolation insuffisante pouvant impacter le confort thermique et acoustique.",
       intervention:
         "Analyse des performances existantes puis mise en place d'une solution adaptée aux contraintes du bâtiment.",
-      result:
-        "Un meilleur confort intérieur et des performances améliorées.",
+      result: "Un meilleur confort intérieur et des performances améliorées.",
       image: "./images/schema-isolation-01.png",
     },
     {
@@ -44,9 +43,7 @@ export default function HiddenProblems() {
   return (
     <section className="bg-white py-12 sm:py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
-
         <div className="max-w-3xl">
-
           <span
             className="
               inline-flex
@@ -67,7 +64,6 @@ export default function HiddenProblems() {
             Derrière les murs
           </span>
 
-
           <h2
             className="
               mt-4
@@ -84,7 +80,6 @@ export default function HiddenProblems() {
             avant qu'elles deviennent des problèmes.
           </h2>
 
-
           <p
             className="
               mt-3
@@ -96,21 +91,16 @@ export default function HiddenProblems() {
               sm:text-base
             "
           >
-            Chaque bâtiment possède ses propres contraintes. Une analyse
-            précise permet d'adapter les solutions avant le début des travaux.
+            Chaque bâtiment possède ses propres contraintes. Une analyse précise
+            permet d'adapter les solutions avant le début des travaux.
           </p>
-
         </div>
 
-
         <div className="mt-10 space-y-4">
-
           {problems.map((problem, index) => {
-
             const active = open === index;
 
             return (
-
               <div
                 key={problem.title}
                 className="
@@ -121,11 +111,8 @@ export default function HiddenProblems() {
                   bg-white
                 "
               >
-
                 <button
-                  onClick={() =>
-                    setOpen(active ? null : index)
-                  }
+                  onClick={() => setOpen(active ? null : index)}
                   className="
                     flex
                     w-full
@@ -139,7 +126,6 @@ export default function HiddenProblems() {
                     sm:py-6
                   "
                 >
-
                   <span
                     className="
                       text-4xl
@@ -152,9 +138,7 @@ export default function HiddenProblems() {
                     {problem.number}
                   </span>
 
-
                   <div className="flex-1">
-
                     <h3
                       className="
                         text-xl
@@ -166,9 +150,7 @@ export default function HiddenProblems() {
                     >
                       {problem.title}
                     </h3>
-
                   </div>
-
 
                   <span
                     className="
@@ -185,14 +167,10 @@ export default function HiddenProblems() {
                   >
                     {active ? "−" : "+"}
                   </span>
-
                 </button>
 
-
                 <AnimatePresence initial={false}>
-
                   {active && (
-
                     <motion.div
                       initial={{
                         height: 0,
@@ -212,7 +190,6 @@ export default function HiddenProblems() {
                       }}
                       className="overflow-hidden"
                     >
-
                       <div
                         className="
                           px-5
@@ -222,7 +199,6 @@ export default function HiddenProblems() {
                           sm:pb-8
                         "
                       >
-
                         <div
                           className="
                             grid
@@ -231,7 +207,6 @@ export default function HiddenProblems() {
                             md:grid-cols-[1fr_220px]
                           "
                         >
-
                           <div
                             className="
                               border-l
@@ -241,9 +216,7 @@ export default function HiddenProblems() {
                               sm:pl-8
                             "
                           >
-
                             <div>
-
                               <p
                                 className="
                                   text-xs
@@ -255,7 +228,6 @@ export default function HiddenProblems() {
                               >
                                 Observation
                               </p>
-
 
                               <p
                                 className="
@@ -269,13 +241,9 @@ export default function HiddenProblems() {
                               >
                                 {problem.observation}
                               </p>
-
                             </div>
 
-
-
                             <div className="mt-6">
-
                               <p
                                 className="
                                   text-xs
@@ -287,7 +255,6 @@ export default function HiddenProblems() {
                               >
                                 Intervention
                               </p>
-
 
                               <p
                                 className="
@@ -301,13 +268,9 @@ export default function HiddenProblems() {
                               >
                                 {problem.intervention}
                               </p>
-
                             </div>
 
-
-
                             <div className="mt-6">
-
                               <p
                                 className="
                                   text-xs
@@ -319,7 +282,6 @@ export default function HiddenProblems() {
                               >
                                 Résultat
                               </p>
-
 
                               <p
                                 className="
@@ -333,11 +295,8 @@ export default function HiddenProblems() {
                               >
                                 {problem.result}
                               </p>
-
                             </div>
-
                           </div>
-
 
                           <div
                             className="
@@ -345,7 +304,6 @@ export default function HiddenProblems() {
                               md:block
                             "
                           >
-
                             <img
                               src={problem.image}
                               alt={problem.title}
@@ -359,28 +317,16 @@ export default function HiddenProblems() {
                                 sm:w-[260px]
                               "
                             />
-
                           </div>
-
-
                         </div>
-
                       </div>
-
                     </motion.div>
-
                   )}
-
                 </AnimatePresence>
-
               </div>
-
             );
-
           })}
-
         </div>
-
       </div>
     </section>
   );
