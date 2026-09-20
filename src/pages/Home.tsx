@@ -1,11 +1,8 @@
 import Hero from "./Home/Hero";
-import Services from "./Home/Services";
-import Faq from "./Home/Faq";
 import WhyUs from "./Home/WhyUs";
 import TrustedPartners from "./Home/TrustedPartners";
 import PortfolioCategories from "./Home/PortfolioCategories";
-import HiddenProblems from "./Home/HiddenProblems";
-import PlacoTypes from "./Home/PlacoTypes";
+import BeforeAfterSection from "./Home/BeforeAfterSection";
 
 export default function Home() {
   return (
@@ -13,10 +10,7 @@ export default function Home() {
       <Hero />
       <TrustedPartners />
       <PortfolioCategories />
-      <Services />
-      <HiddenProblems />
-      <Faq />
-      <PlacoTypes />
+      <BeforeAfterSection />
       <WhyUs />
     </>
   );

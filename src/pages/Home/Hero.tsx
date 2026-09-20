@@ -233,7 +233,7 @@ export default function Hero() {
               </p>
 
               <h3 className="mt-1 text-base sm:text-lg font-bold text-[#111A5B]">
-                Plaquiste & Isolation
+                Confort & finition
               </h3>
             </motion.div>
           </motion.div>

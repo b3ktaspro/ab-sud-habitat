@@ -1,19 +1,16 @@
 export default function WhyUs() {
-  const stats = [
+  const values = [
     {
-      number: "20+",
-      title: "Années d'expérience",
-      text: "Un savoir-faire construit au fil des années dans la rénovation intérieure et les métiers du plâtre.",
+      title: "Une préparation maîtrisée",
+      text: "Chaque intervention commence par une analyse précise de l'existant afin de définir les solutions les plus adaptées au bâtiment.",
     },
     {
-      number: "100%",
-      title: "Projets sur mesure",
-      text: "Chaque chantier est étudié selon les contraintes du bâtiment et les attentes du client.",
+      title: "Des finitions exigeantes",
+      text: "Nous accordons une attention particulière aux détails pour garantir des réalisations propres, durables et harmonieuses.",
     },
     {
-      number: "4",
-      title: "Domaines d'expertise",
-      text: "Plâtrerie, isolation, faux plafonds et rénovation pour accompagner différents types de projets.",
+      title: "Un suivi de proximité",
+      text: "De la première étude jusqu'aux dernières finitions, nous restons présents pour accompagner chaque étape du projet.",
     },
   ];
 
@@ -22,25 +19,24 @@ export default function WhyUs() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="max-w-3xl">
           <span className="inline-flex rounded-full border border-[#D9DDEA] bg-white px-3 py-1.5 text-xs font-medium text-[#111A5B] sm:px-4 sm:py-2 sm:text-sm">
-            Pourquoi AB Sud Habitat
+            Notre engagement
           </span>
 
           <h2 className="mt-4 text-3xl font-bold leading-tight text-[#111A5B] sm:text-4xl">
-            Une expertise au service
+            Une méthode pensée
             <br />
-            de vos projets.
+            pour des résultats durables.
           </h2>
 
           <p className="mt-3 max-w-2xl text-sm leading-relaxed text-slate-600 sm:text-base">
-            Depuis plus de 20 ans, nous accompagnons particuliers et
-            professionnels dans leurs projets de plâtrerie, isolation, faux
-            plafonds, peinture et rénovation avec la même exigence de qualité et
-            de finition.
+            Chaque projet bénéficie d'une approche structurée mêlant écoute,
+            précision technique et qualité d'exécution pour transformer vos
+            espaces dans les meilleures conditions.
           </p>
         </div>
 
         <div className="mt-8 grid gap-4 lg:grid-cols-3">
-          {stats.map((item) => (
+          {values.map((item) => (
             <div
               key={item.title}
               className="
@@ -51,15 +47,9 @@ export default function WhyUs() {
                 sm:p-6
               "
             >
-              <p className="text-4xl font-bold text-[#111A5B] sm:text-5xl">
-                {item.number}
-              </p>
+              <h3 className="text-lg font-bold text-[#111A5B]">{item.title}</h3>
 
-              <h3 className="mt-3 text-lg font-bold text-[#111A5B]">
-                {item.title}
-              </h3>
-
-              <p className="mt-2 text-sm leading-relaxed text-slate-600">
+              <p className="mt-3 text-sm leading-relaxed text-slate-600">
                 {item.text}
               </p>
             </div>
@@ -82,13 +72,13 @@ export default function WhyUs() {
           <div className="grid gap-5 lg:grid-cols-[1fr_auto] lg:items-center">
             <div>
               <h3 className="text-xl font-bold text-white sm:text-2xl">
-                Un accompagnement complet, de l'étude aux finitions.
+                Un chantier pensé dans chaque détail.
               </h3>
 
               <p className="mt-2 max-w-2xl text-sm leading-relaxed text-white/70">
-                Nous vous accompagnons dans chaque étape du projet afin de
-                proposer des solutions adaptées, durables et cohérentes avec
-                votre intérieur.
+                Notre objectif est de proposer des solutions cohérentes avec
+                votre intérieur, en associant fonctionnalité, esthétique et
+                qualité de réalisation.
               </p>
 
               <a
@@ -118,7 +108,7 @@ export default function WhyUs() {
               </p>
 
               <p className="mt-1 text-lg font-bold text-white">
-                Qualité & précision
+                Expertise intérieure
               </p>
             </div>
           </div>
