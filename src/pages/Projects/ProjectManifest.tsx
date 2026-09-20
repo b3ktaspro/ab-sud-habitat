@@ -26,26 +26,32 @@ export default function ProjectManifest() {
         <div className="mt-12 grid gap-8 sm:mt-16 md:grid-cols-3">
           <div>
             <span className="text-3xl font-bold text-[#111A5B] sm:text-4xl">
-              20+
+              Sur mesure
             </span>
 
-            <p className="mt-2 text-sm text-slate-500">Années d'expérience</p>
+            <p className="mt-2 text-sm text-slate-500">
+              Des solutions adaptées à chaque espace et chaque contrainte.
+            </p>
           </div>
 
           <div>
             <span className="text-3xl font-bold text-[#111A5B] sm:text-4xl">
-              500+
+              Précision
             </span>
 
-            <p className="mt-2 text-sm text-slate-500">Réalisations</p>
+            <p className="mt-2 text-sm text-slate-500">
+              Une attention particulière portée aux détails et aux finitions.
+            </p>
           </div>
 
           <div>
             <span className="text-3xl font-bold text-[#111A5B] sm:text-4xl">
-              Sud
+              Accompagnement
             </span>
 
-            <p className="mt-2 text-sm text-slate-500">Hérault & Occitanie</p>
+            <p className="mt-2 text-sm text-slate-500">
+              Un suivi complet de l'étude du projet jusqu'à la réalisation.
+            </p>
           </div>
         </div>
       </div>
